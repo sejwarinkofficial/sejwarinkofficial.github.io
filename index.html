@@ -1,55 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#050505">
-<meta name="description" content="SEJWAR INK OFFICIAL — The Journey of Words. All official links of Vaibhav Kumar Sejwar.">
-<title>SEJWAR INK OFFICIAL — All Links</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sejwarinkofficial - Poet | Web Developer | Creator">
+
+    <title>Sejwarinkofficial | Official Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<main class="page">
-  <div class="glow"></div>
 
-  <header class="profile">
-    <div class="logo">SJ</div>
-    <p class="eyebrow">SEJWAR INK OFFICIAL</p>
-    <h1>Vaibhav Kumar Sejwar</h1>
-    <p class="tagline">The Journey of Words</p>
-    <p class="bio">Poetry • Writing • Digital Creativity</p>
-  </header>
+<!-- Loading Screen -->
+<div id="loader">
+    <h1>Sejwarinkofficial</h1>
+</div>
 
-  <section class="links" aria-label="Official links">
-    <a class="link" href="https://youtube.com/@sejwarinkofficial-w5w?si=bCNhgZs7bNeAN4it" target="_blank" rel="noopener">
-      <span class="icon">▶</span><span><b>YouTube</b><small>@sejwarinkofficial-w5w</small></span><span>↗</span>
-    </a>
+<!-- 3D Background -->
+<canvas id="bg3d"></canvas>
 
-    <a class="link" href="https://english.pratilipi.com/series/the-journey-of-wordswhen-our-paths-met-by-vaibhav-kumar-sejwar-pgho6eqrtxev" target="_blank" rel="noopener">
-      <span class="icon">✍</span><span><b>Pratilipi</b><small>Vaibhav Kumar Sejwar</small></span><span>↗</span>
-    </a>
+<!-- Navbar -->
+<header>
+<nav class="navbar">
 
-    <a class="link" href="https://hindi.pratilipi.com/series/khamoshi-ke-us-paarthe-journey-of-wordsupshirshakkhamoshi-se-khud-tak-ki-ek-bhavanatmak-yatralekhakwritten-composed-stories-vaibhav-kumar-by-vaibhav-kumar-sejwar-wnz7lhgd5991" target="_blank" rel="noopener">
-      <span class="icon">📖</span><span><b>ख़ामोशी के उस पार</b><small>Pratilipi Series</small></span><span>↗</span>
-    </a>
+<div class="logo">
+    Sejwarinkofficial
+</div>
 
-    <a class="link" href="https://sejwarinkofficial.blogspot.com/" target="_blank" rel="noopener">
-      <span class="icon">✦</span><span><b>The Journey of Words</b><small>Official Blog</small></span><span>↗</span>
-    </a>
-  </section>
+<ul class="menu">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#poetry">Poetry</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-  <section class="notice">
-    <span>✓</span>
-    <p>Only publicly verified links are included. More platforms can be added after their exact profile URLs are confirmed.</p>
-  </section>
+</nav>
+</header>
 
-  <footer>
-    <p>Written &amp; Composed by Vaibhav Kumar Sejwar</p>
-    <p class="handle">@sejwarinkofficial</p>
-  </footer>
-</main>
+<!-- Hero -->
+<section id="home" class="hero">
+
+<div class="hero-content">
+
+<img src="assets/profile.jpg" class="profile">
+
+<h1>
+Hi, I'm
+<span>Vaibhav</span>
+</h1>
+
+<h2 id="typing"></h2>
+
+<p>
+Poet • Web Developer • Content Creator
+</p>
+
+<a href="#poetry" class="btn">
+Read Poetry
+</a>
+
+</div>
+
+</section>
+
+<!-- About -->
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+मैं वैभव हूँ।
+
+मैं एक Web Developer और Poetry Writer हूँ।
+मुझे ऐसी कविताएँ लिखना पसंद है जो दिल को छू जाएँ और ऐसी वेबसाइटें बनाना पसंद है जो देखने में प्रीमियम लगें।
+
+</p>
+
+</section>
+
+<!-- Poetry -->
+<section id="poetry">
+
+<h2>Latest Poetry</h2>
+
+<div class="poetry-card">
+
+<p id="poem">
+
+कुछ चेहरे तस्वीरों में नहीं,
+दिल की धड़कनों में बस जाते हैं।
+
+</p>
+
+<button onclick="nextPoetry()">
+Next Poetry
+</button>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+<section id="projects">
+
+<h2>My Projects</h2>
+
+<div class="project-grid">
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Modern Personal Portfolio</p>
+</div>
+
+<div class="card">
+<h3>Poetry Website</h3>
+<p>Hindi Poetry Collection</p>
+</div>
+
+<div class="card">
+<h3>Travel Blog</h3>
+<p>Travel Photography Website</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Instagram -->
+<section id="instagram">
+
+<h2>Follow Me</h2>
+
+<a href="https://instagram.com/sejwarinkofficial" target="_blank">
+
+<i class="fab fa-instagram"></i>
+
+@sejwarinkofficial
+
+</a>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Write Message"></textarea>
+
+<button>
+
+Send Message
+
+</button>
+
+</form>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+<p>
+
+© 2026 Sejwarinkofficial
+All Rights Reserved.
+
+</p>
+
+</footer>
+
+<!-- Three.js -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+<!-- Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+
 </body>
 </html>
